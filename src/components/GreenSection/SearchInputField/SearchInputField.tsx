@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, TextInput} from 'react-native';
 import SearchIcon from 'react-native-vector-icons/AntDesign';
-import {Colors, Typography} from '../../../styles';
+import {Colors} from '../../../styles';
 import styles from './styles';
 
 export default function SearchInputField() {
@@ -10,7 +10,7 @@ export default function SearchInputField() {
       <TextInput
         placeholder="Organisation suchen"
         placeholderTextColor={Colors.placeholder}
-        style={[styles.textInput, {...Typography.EXTRA_SMALL_GRAY_REGULAR_TEXT}]}
+        style={styles.textInput}
       />
       <SearchIcon
         style={styles.searchIcon}
