@@ -1,13 +1,10 @@
 import {StyleSheet} from 'react-native';
-import {Colors} from '../../../styles';
+import {Colors, Typography} from '../../../styles';
 
 export default StyleSheet.create({
-  textInput: {
-    // padding: 10,
-    // fontSize: 18,
-    //   fontFamily: 'semiBold',
-    //   color: Colors.white,
-    // paddingLeft: 10,
+  textInput: { 
+    ...Typography.EXTRA_SMALL_GRAY_REGULAR_TEXT,
+    width: "90%",
   },
   textInputContainer: {
     flexDirection: 'row',
@@ -15,7 +12,7 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
     backgroundColor: Colors.darkGreen,
     borderRadius: 5,
-    margin: 10,
+    marginVertical: 10,
   },
   searchIcon: {
     paddingRight: 10,

@@ -7,11 +7,10 @@ import SearchInputField from '../SearchInputField/SearchInputField';
 
 export default function Header() {
   return (
-    <>
-      <View>
+      <View style={styles.headerContainer}>
         <View style={styles.drawerIconSection}>
           <View>
-            <BurgerIcon name="menu" size={24} color={Colors.white} />
+            <BurgerIcon name="menu" size={30} color={Colors.white} />
           </View>
           <Image
             source={require('../../../assets/icon.png')}
@@ -20,12 +19,11 @@ export default function Header() {
         </View>
 
       <View style={styles.descriptionContainer}>
-        <Text style={Typography.SMALL_LIGHTGREEN_REGULAR_TEXT}>Willkommen in</Text>
+        <Text style={Typography.MEDIUM_LIGHTGREEN_REGULAR_TEXT}>Willkommen in</Text>
         <Text style={Typography.MEDIUM_WHITE_BOLD_TEXT}>GRun spendinos Spendenwelt</Text>
       </View>
       
       <SearchInputField />
       </View>
-    </>
   );
 }

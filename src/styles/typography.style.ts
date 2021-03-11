@@ -2,16 +2,19 @@ import {StyleSheet} from 'react-native';
 import Colors from './colors.style';
 
 const extraSmallFontSize= {
-  fontSize: 11,
+  fontSize: 10,
 }
 const smallFontSize= {
-  fontSize: 14,
+  fontSize: 11,
 }
 const mediumFontSize= {
-  fontSize: 15,
+  fontSize: 14,
 }
 const largeFontSize= {
   fontSize: 25,
+}
+const extraLargeFontSize= {
+  fontSize: 30,
 }
 
 export default StyleSheet.create({
@@ -26,8 +29,18 @@ export default StyleSheet.create({
     fontFamily: 'Montserrat-Bold',
     color: Colors.darkGray
   },
+  SMALL_BLACK_TEXT: {
+    ...smallFontSize,
+    fontFamily: 'Montserrat-Bold',
+    color: Colors.black
+  },
   SMALL_LIGHTGREEN_REGULAR_TEXT: {
     ...smallFontSize,
+    fontFamily: 'Montserrat-Regular',
+    color: Colors.lightGreen
+  },
+  MEDIUM_LIGHTGREEN_REGULAR_TEXT: {
+    ...mediumFontSize,
     fontFamily: 'Montserrat-Regular',
     color: Colors.lightGreen
   },
@@ -40,8 +53,14 @@ export default StyleSheet.create({
     ...mediumFontSize,
     fontFamily: 'Montserrat-Regular',
   },
-  LARGE_BOLD_TEXT: {
+  LARGE_WHITE_BOLD_TEXT: {
     ...largeFontSize,
     fontFamily: 'Montserrat-Medium',
+    color: Colors.white
+  },
+  EXTRA_LARGE_WHITE_BOLD_TEXT: {
+    ...extraLargeFontSize,
+    fontFamily: 'Montserrat-Medium',
+    color: Colors.white
   },
 });
