@@ -5,7 +5,6 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: Colors.green,
-    position: "relative"
   },
   whiteSectionContainer: {
     backgroundColor: Colors.gray,
@@ -15,5 +14,6 @@ export default StyleSheet.create({
   },
   greenSectionContainer: {
     flex: 1,
+    backgroundColor: Colors.green,
   },
 });

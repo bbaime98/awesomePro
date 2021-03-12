@@ -16,4 +16,8 @@ export default StyleSheet.create({
         height: 30,
         width: 30,
     },
+    menuIcon: {
+        height: 20,
+        width: 20,
+    },
 });
