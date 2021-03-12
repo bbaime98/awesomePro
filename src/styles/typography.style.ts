@@ -11,10 +11,10 @@ const mediumFontSize= {
   fontSize: 14,
 }
 const largeFontSize= {
-  fontSize: 25,
+  fontSize: 20,
 }
 const extraLargeFontSize= {
-  fontSize: 30,
+  fontSize: 25,
 }
 
 export default StyleSheet.create({
