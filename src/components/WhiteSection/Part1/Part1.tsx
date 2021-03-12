@@ -20,6 +20,22 @@ const items = [
     amount: '8K',
     icon: require('../../../assets/icons3.png'),
   },
+  {
+    id: 3,
+    title:
+      '3rd cool product with different message and information needed with even more',
+    date: '06 Nov 2020',
+    amount: '10K',
+    icon: require('../../../assets/icons3.png'),
+  },
+  {
+    id: 4,
+    title:
+      '4rd cool product with different message and information needed with even more',
+    date: '06 Nov 2020',
+    amount: '6.3K',
+    icon: require('../../../assets/icons3.png'),
+  },
 ];
 
 export default function Part1() {
