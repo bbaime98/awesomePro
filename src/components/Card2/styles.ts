@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {Card, Typography} from '../../styles';
+import {Card, Colors, Typography} from '../../styles';
 
 export default StyleSheet.create({
   cardConatiner: {

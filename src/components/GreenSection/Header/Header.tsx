@@ -1,8 +1,7 @@
 import React from 'react';
 import {View, Text, Image} from 'react-native';
 import styles from './styles';
-import BurgerIcon from 'react-native-vector-icons/Entypo';
-import { Colors, Typography } from '../../../styles';
+import { Typography } from '../../../styles';
 import SearchInputField from '../SearchInputField/SearchInputField';
 
 export default function Header() {
@@ -10,7 +9,10 @@ export default function Header() {
       <View style={styles.headerContainer}>
         <View style={styles.drawerIconSection}>
           <View>
-            <BurgerIcon name="menu" size={30} color={Colors.white} />
+          <Image
+            source={require('../../../assets/menu_icon_white.png')}
+            style={styles.menuIcon}
+          />
           </View>
           <Image
             source={require('../../../assets/icon.png')}

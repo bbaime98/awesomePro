@@ -8,7 +8,7 @@ const smallFontSize= {
   fontSize: 11,
 }
 const mediumFontSize= {
-  fontSize: 14,
+  fontSize: 13,
 }
 const largeFontSize= {
   fontSize: 20,
@@ -34,6 +34,11 @@ export default StyleSheet.create({
     fontFamily: 'Montserrat-Bold',
     color: Colors.black
   },
+  SMALL_GRAY_REGULAR_TEXT: {
+    ...smallFontSize,
+    fontFamily: 'Montserrat-Regular',
+    color: Colors.darkGray
+  },
   SMALL_LIGHTGREEN_REGULAR_TEXT: {
     ...smallFontSize,
     fontFamily: 'Montserrat-Regular',
@@ -49,14 +54,20 @@ export default StyleSheet.create({
     fontFamily: 'Montserrat-Bold',
     color: Colors.white
   },
-  MEDIUM_REGULAR_TEXT: {
+  MEDIUM_BLACK_REGULAR_TEXT: {
     ...mediumFontSize,
-    fontFamily: 'Montserrat-Regular',
+    fontFamily: 'Montserrat-Medium',
+    color: Colors.black
   },
   LARGE_WHITE_BOLD_TEXT: {
     ...largeFontSize,
     fontFamily: 'Montserrat-Medium',
     color: Colors.white
+  },
+  LARGE_GRAY_BOLD_TEXT: {
+    ...largeFontSize,
+    fontFamily: 'Montserrat-Bold',
+    color: Colors.darkGray
   },
   EXTRA_LARGE_WHITE_BOLD_TEXT: {
     ...extraLargeFontSize,
