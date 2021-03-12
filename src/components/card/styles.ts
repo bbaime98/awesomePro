@@ -1,21 +1,13 @@
 import {StyleSheet} from 'react-native';
-import {Colors, Typography} from '../../styles';
+import {Card, Colors, Typography} from '../../styles';
 
 export default StyleSheet.create({
   cardConatiner: {
     flexDirection: 'row',
     height: 70,
     width: 300,
-    borderRadius: 10,
     marginHorizontal: 10,
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 10,
-      height: 10,
-    },
-    shadowOpacity: 0.7,
-    shadowRadius: 20,
-    elevation: 5,
+    ...Card.cardConatiner
   },
   amountContainer: {
     backgroundColor: Colors.green,
@@ -34,9 +26,7 @@ export default StyleSheet.create({
     borderTopRightRadius: 5,
   },
   smallIcon: {
-    borderColor: Colors.darkGray,
-    borderRadius: 30,
-    borderWidth: 1,
+    ...Card.Icon,
     width: 20,
     height: 20,
     marginHorizontal: 10,
