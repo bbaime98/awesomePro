@@ -24,6 +24,16 @@ export default StyleSheet.create({
     fontFamily: 'Montserrat-Regular',
     color: Colors.darkGray
   },
+  EXTRA_SMALL_GREEN_REGULAR_TEXT: {
+    ...extraSmallFontSize,
+    fontFamily: 'Montserrat-Regular',
+    color: Colors.green
+  },
+  EXTRA_SMALL_WHITE_REGULAR_TEXT: {
+    ...extraSmallFontSize,
+    fontFamily: 'Montserrat-Regular',
+    color: Colors.white
+  },
   SMALL_BOLD_GRAY_TEXT: {
     ...smallFontSize,
     fontFamily: 'Montserrat-Bold',
@@ -71,7 +81,12 @@ export default StyleSheet.create({
   },
   EXTRA_LARGE_WHITE_BOLD_TEXT: {
     ...extraLargeFontSize,
-    fontFamily: 'Montserrat-Medium',
+    fontFamily: 'Montserrat-Bold',
     color: Colors.white
+  },
+  EXTRA_LARGE_GREEN_BOLD_TEXT: {
+    ...extraLargeFontSize,
+    fontFamily: 'Montserrat-Bold',
+    color: Colors.green
   },
 });
