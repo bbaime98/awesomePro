@@ -6,5 +6,6 @@ export default {
   white: "#FFFFFF",
   darkGray: "#6d6e6e",
   lightGreen: "#c9e4e2",
-  placeholder: "#559d96"
+  placeholder: "#559d96",
+  separator: "#d6d6d6"
 }

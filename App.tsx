@@ -9,21 +9,16 @@
  */
 
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import {StatusBar} from 'react-native';
 import HomeScreen from './src/screens/Homescreen/HomeScreen';
+import StepScreen from './src/screens/StepScreen/StepScreen';
 
 const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-        <HomeScreen />
+        {/* <HomeScreen /> */}
+        <StepScreen />
     </>
   );
 };
