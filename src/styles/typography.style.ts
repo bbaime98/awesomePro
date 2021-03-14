@@ -64,6 +64,11 @@ export default StyleSheet.create({
     fontFamily: 'Montserrat-Bold',
     color: Colors.white
   },
+  MEDIUM_GREEN_REGULAR_TEXT: {
+    ...mediumFontSize,
+    fontFamily: 'Montserrat-Medium',
+    color: Colors.green
+  },
   MEDIUM_BLACK_REGULAR_TEXT: {
     ...mediumFontSize,
     fontFamily: 'Montserrat-Medium',
