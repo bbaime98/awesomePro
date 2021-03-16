@@ -1,7 +1,23 @@
 import {StyleSheet} from 'react-native';
-import {Colors} from '../../styles';
+import {Colors, Typography} from '../../styles';
 
 export default StyleSheet.create({
+  titleContainer: {
+  width: "80%",
+  alignItems: "center"
+  },
+  closeIconContainer: {
+    width: "10%",
+    alignItems: "center",
+    
+  },
+  stepHeader: {
+    flexDirection: 'row',
+    padding: 10,
+  },
+  stepTitle: {
+    ...Typography.EXTRA_LARGE_GREEN_BOLD_TEXT,
+  },
   inputContainerStyles: {
     backgroundColor: Colors.gray,
   },

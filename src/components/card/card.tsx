@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Image} from 'react-native';
+import {View, Text, Image, TouchableOpacity} from 'react-native';
 import {Typography} from '../../styles';
 import styles from './styles';
 
@@ -8,11 +8,13 @@ type CardProps = {
   icon: string;
   title: string;
   date: string;
+  onPress:Function
   // source: object
 }
 
-const Card: React.FC<CardProps>= ({amount, icon, title, date}) => {
+const Card: React.FC<CardProps>= ({amount, icon, title, date, onPress}) => {
   return (
+    <TouchableOpacity onPress={onPress}>
     <View style={styles.cardConatiner}>
       <View style={styles.amountContainer}>
         <Text style={Typography.MEDIUM_WHITE_BOLD_TEXT}>€</Text>
@@ -28,7 +30,8 @@ const Card: React.FC<CardProps>= ({amount, icon, title, date}) => {
           <Text style={styles.date}>{date}</Text>
         </View>
       </View>
-    </View>
+      </View>
+      </TouchableOpacity>
   );
 }
 

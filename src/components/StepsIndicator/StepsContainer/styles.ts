@@ -6,16 +6,6 @@ export default StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
   },
-  closeIconContainer: {
-    width: "30%"
-  },
-  stepHeader: {
-    flexDirection: 'row',
-    padding: 10,
-  },
-  stepTitle: {
-    ...Typography.EXTRA_LARGE_GREEN_BOLD_TEXT,
-  },
   stepNumber: {
     padding: 5,
     width: 30,

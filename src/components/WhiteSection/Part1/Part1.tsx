@@ -2,6 +2,8 @@ import React from 'react';
 import {View, Text, FlatList} from 'react-native';
 import Card from '../../Card/Card';
 import styles from './styles';
+import { useNavigation } from '@react-navigation/native';
+import routes from '../../../navigator/routes';
 
 const items = [
   {
@@ -39,6 +41,7 @@ const items = [
 ];
 
 export default function Part1() {
+  const navigation = useNavigation()
   return (
     <View style={styles.part1Container}>
       <Text style={styles.title}>Das Wundegerade gespendt, machts Du mit?</Text>
@@ -52,6 +55,7 @@ export default function Part1() {
         keyExtractor={(item) => item.id.toString()}
         renderItem={({item}) => (
           <Card
+            onPress={()=>navigation.navigate(routes.STEPS)}
             amount={item.amount}
             date={item.date}
             icon={item.icon}

@@ -10,15 +10,16 @@
 
 import React from 'react';
 import {StatusBar} from 'react-native';
-import HomeScreen from './src/screens/Homescreen/HomeScreen';
-import StepScreen from './src/screens/StepScreen/StepScreen';
+import {HomeStackNavigator} from './src/navigator/index';
+import {NavigationContainer} from '@react-navigation/native';
 
 const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-        {/* <HomeScreen /> */}
-        <StepScreen />
+      <NavigationContainer>
+        <HomeStackNavigator />
+      </NavigationContainer>
     </>
   );
 };
