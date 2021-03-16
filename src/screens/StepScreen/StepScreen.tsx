@@ -1,18 +1,31 @@
 import React from 'react';
-import {View} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 import Button from '../../components/Button/Button';
 import InputField from '../../components/InputField/InputField';
 import Picker from '../../components/Picker/Picker';
 import {StepsContainer} from '../../components/StepsIndicator';
 import {Colors, Typography} from '../../styles';
 import styles from './styles';
+import CloseIcon from 'react-native-vector-icons/AntDesign';
+import { useNavigation } from '@react-navigation/native'
 
 export default function StepScreen() {
+  const navigation = useNavigation()
   return (
     <View style={styles.stepScreenContainer}>
-        <View style={styles.stepsShadow}> 
-      <StepsContainer />
+      <View style={styles.stepHeader}>
+        <TouchableOpacity
+          style={styles.closeIconContainer}
+          onPress={() => navigation.goBack()}>
+          <CloseIcon name="close" size={25} color={Colors.black} />
+        </TouchableOpacity>
+        <View style={styles.titleContainer}>
+          <Text style={styles.stepTitle}>SPEDEN</Text>
         </View>
+      </View>
+      <View style={styles.stepsShadow}>
+        <StepsContainer />
+      </View>
       <View style={styles.belowSection}>
         <Picker />
         <View style={styles.inputSection}>
