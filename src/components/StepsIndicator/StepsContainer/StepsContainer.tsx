@@ -11,16 +11,12 @@ export default function StepsContainer() {
 
         <View>
         <Step counter={1} stepName="Menge" active={true} />
-        <View style={styles.step1}>
-        <LineSeparator />
-        </View>
+        <LineSeparator customStyle={styles.step1}/>
         </View>
 
         <View style={styles.step2Container}>
         <Step  counter={2} stepName="Meine Daten" />
-        <View style={styles.step2}>
-        <LineSeparator />
-        </View>
+        <LineSeparator customStyle={styles.step2}/>
         </View>
 
         <View style={styles.step3Container}>

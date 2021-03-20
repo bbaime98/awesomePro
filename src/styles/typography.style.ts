@@ -84,6 +84,16 @@ export default StyleSheet.create({
     fontFamily: 'Montserrat-Bold',
     color: Colors.darkGray
   },
+  LARGE_GRAY_REGULAR_TEXT: {
+    ...largeFontSize,
+    fontFamily: 'Montserrat-Medium',
+    color: Colors.darkGray
+  },
+  LARGE_GREEN_REGULAR_TEXT: {
+    ...largeFontSize,
+    fontFamily: 'Montserrat-Medium',
+    color: Colors.green
+  },
   EXTRA_LARGE_WHITE_BOLD_TEXT: {
     ...extraLargeFontSize,
     fontFamily: 'Montserrat-Bold',

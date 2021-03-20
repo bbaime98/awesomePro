@@ -10,7 +10,7 @@
 
 import React from 'react';
 import {StatusBar} from 'react-native';
-import {HomeStackNavigator} from './src/navigator/index';
+import {DrawerNavigator} from './src/navigator/index';
 import {NavigationContainer} from '@react-navigation/native';
 
 const App = () => {
@@ -18,7 +18,7 @@ const App = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <NavigationContainer>
-        <HomeStackNavigator />
+        <DrawerNavigator />
       </NavigationContainer>
     </>
   );

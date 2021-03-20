@@ -1,19 +1,23 @@
 import React from 'react';
-import {View, Text, Image} from 'react-native';
+import {View, Text, Image, TouchableOpacity} from 'react-native';
+import { DrawerActions, useNavigation } from '@react-navigation/native';
 import styles from './styles';
 import {Colors, Typography} from '../../../styles';
+
 import InputField from '../../InputField/InputField';
 
 export default function Header() {
+  const navigation = useNavigation()
   return (
     <View style={styles.headerContainer}>
       <View style={styles.drawerIconSection}>
-        <View>
+        <TouchableOpacity
+          onPress={() => navigation.dispatch(DrawerActions.toggleDrawer())}>
           <Image
             source={require('../../../assets/menu_icon_white.png')}
             style={styles.menuIcon}
           />
-        </View>
+        </TouchableOpacity>
         <Image
           source={require('../../../assets/icon.png')}
           style={styles.logo}
