@@ -17,9 +17,6 @@ function DrawerNavigator() {
       }}
     >
       <Drawer.Screen
-        // options={{
-        //   drawerIcon: ({focused, color, size})=> <Icon name="close" color="red" size={20}/>
-        // }}
         name={routes.FEED} component={HomeStackNavigator} />
       <Drawer.Screen name={routes.ABOUT} component={AboutUsScreen} />
     </Drawer.Navigator>

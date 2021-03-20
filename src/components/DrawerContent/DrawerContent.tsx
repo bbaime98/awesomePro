@@ -1,5 +1,4 @@
 import React from 'react';
-import {View, Text} from 'react-native';
 import {DrawerContentScrollView} from '@react-navigation/drawer';
 import ContentHeader from './ContentHeader/ContentHeader';
 import routes from '../../navigator/routes';
@@ -17,19 +16,19 @@ const items = [
     {
       label: 'Spendenvelauf',
       iconName: 'history',
-      route: routes.FEED,
+      route: routes.STEPS,
     },
   ],
   [
     {
       label: 'Kontaktiere uns',
       iconName: 'email',
-      route: routes.FEED,
+      route: routes.ABOUT,
     },
     {
       label: 'Freund einladen',
       iconName: 'share',
-      route: routes.FEED,
+      route: routes.STEPS,
     },
     {
       label: 'Uber uns',
@@ -51,35 +50,41 @@ const items = [
   ],
 ];
 
-export default function DrawerContent(props) {
+export default function DrawerContent({navigation}) {
   return (
     <>
       <ContentHeader />
       <DrawerContentScrollView>
         <Separator width="90%" customStyle={styles.separator} />
-        <AppDrawerItem iconName="person-add" label="Werde ein spendino!" />
+        <AppDrawerItem iconName="person-add" label="Werde ein spendino!"  navigation={navigation} route={routes.STEPS} />
         <Separator width="90%" customStyle={styles.separator} />
         {items[0].map((item) => (
           <AppDrawerItem
+            navigation={navigation}
             key={item.label}
             iconName={item.iconName}
             label={item.label}
+            route={item.route}
           />
         ))}
         <Separator width="90%" customStyle={styles.separator} />
         {items[1].map((item) => (
           <AppDrawerItem
+            navigation={navigation}
             key={item.label}
             iconName={item.iconName}
             label={item.label}
+            route={item.route}
           />
         ))}
         <Separator width="90%" customStyle={styles.separator} />
         {items[2].map((item) => (
           <AppDrawerItem
+            navigation={navigation}
             key={item.label}
             iconName={item.iconName}
             label={item.label}
+            route={item.route}
           />
         ))}
       </DrawerContentScrollView>
