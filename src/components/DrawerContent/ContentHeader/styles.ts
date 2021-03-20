@@ -6,9 +6,9 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingLeft: 10,
+    marginLeft: 40,
     paddingVertical: 30,
-    width: '70%',
+    width: '65%',
   },
   logoIcon: {
     width: '100%',

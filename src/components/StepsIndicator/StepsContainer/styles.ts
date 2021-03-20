@@ -22,11 +22,13 @@ export default StyleSheet.create({
     position: 'absolute',
     top: '35%',
     left: 40,
+    width: 80
   },
   step2: {
     position: 'absolute',
     top: '35%',
     left: 55,
+    width: 80
   },
   step2Container:{
     marginLeft: 36

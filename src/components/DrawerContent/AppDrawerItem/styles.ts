@@ -1,8 +1,8 @@
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
-    separator: {
-        alignSelf: "flex-end",
-        marginVertical: 5
+    drawerItem: {
+        width: "90%",
+        marginLeft: 40
     }
 });
